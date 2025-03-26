@@ -9,8 +9,9 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 )
 
-func queryBlock() {
-	client, err := ethclient.Dial("https://eth-sepolia.g.alchemy.com/v2/<API_KEY>")
+func QueryBlock() {
+	// https://eth-sepolia.g.alchemy.com/v2/krKvtXgVstc6rbUJ_cV2z9gBQUT1qL-N
+	client, err := ethclient.Dial("https://eth-sepolia.g.alchemy.com/v2/krKvtXgVstc6rbUJ_cV2z9gBQUT1qL-N")
 	if err != nil {
 		log.Fatal(err)
 	}
